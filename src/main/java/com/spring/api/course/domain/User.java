@@ -3,6 +3,8 @@ package com.spring.api.course.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.spring.api.course.enums.Role;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,6 +23,8 @@ public class User {
 	private String email;
 	
 	private String password;
+	
+	private Role role;
 	
 	private List<Request> requests = new ArrayList<Request>();
 	
